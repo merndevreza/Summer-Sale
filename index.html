@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer Sale</title>
+    <!-- work sans google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <!-- =============
+      header section
+      ================ -->
+    <header class="header">
+      <div class="container header-section">
+        <div class="header-left">
+          <h4>---SALE FEVER---</h4>
+          <h1>
+            Purchase TK 200 or <br />
+            above & get <span>20% off</span>
+          </h1>
+          <p>Use Promo Code <span id="promo-code">SELL200</span></p>
+        </div>
+        <div class="header-right">
+          <img src="images/Summer-sale-banner.png" alt="summer sale" />
+        </div>
+      </div>
+    </header>
+    <!-- =============
+      main section
+      ================ -->
+    <main class="main-section container">
+      <!-- ============= All Products =============-->
+      <section class="all-products">
+        <!-- Kitchenware -->
+        <div class="category">
+          <h2 class="category-title">Kitchenware</h2>
+          <div class="products">
+            <!-- products-card -->
+            <div class="products-card" onclick="addToCart(this)">
+              <div class="product-img">
+                <img src="images/prod1.png" alt="product image" />
+              </div>
+              <div class="product-info">
+                <div class="rating-stars">
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-empty.svg" alt="star-empty" />
+                  <img src="images/star-empty.svg" alt="star-empty" />
+                </div>
+                <h3 class="product-title">K. Accessories</h3>
+                <p class="price"><span class="price-amount">39.00</span> TK</p>
+              </div>
+            </div>
+            <!-- products-card -->
+            <div class="products-card" onclick="addToCart(this)">
+              <div class="product-img">
+                <img src="images/prod2.png" alt="product image" />
+              </div>
+              <div class="product-info">
+                <div class="rating">
+                  <img src="images/star-empty.svg" alt="star-empty" />
+                  <img src="images/star-empty.svg" alt="star-empty" />
+                  <img src="images/star-empty.svg" alt="star-empty" />
+                  <img src="images/star-empty.svg" alt="star-empty" />
+                  <img src="images/star-empty.svg" alt="star-empty" />
+                </div>
+                <h3 class="product-title">Chopping Board Set</h3>
+                <p class="price"><span class="price-amount">25.00</span> TK</p>
+              </div>
+            </div>
+            <!-- products-card -->
+            <div class="products-card" onclick="addToCart(this)">
+              <div class="product-img">
+                <img src="images/prod3.png" alt="product image" />
+              </div>
+              <div class="product-info">
+                <div class="rating">
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-empty.svg" alt="star-empty" />
+                </div>
+                <h3 class="product-title">Home Cooker</h3>
+                <p class="price"><span class="price-amount">49.00</span> TK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sportswear -->
+        <div class="category">
+          <h2 class="category-title">Sportswear</h2>
+          <div class="products">
+            <!-- products-card -->
+            <div class="products-card" onclick="addToCart(this)">
+              <div class="product-img">
+                <img src="images/prod4.png" alt="product image" />
+              </div>
+              <div class="product-info">
+                <div class="rating-stars">
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-empty.svg" alt="star-empty" />
+                  <img src="images/star-empty.svg" alt="star-empty" />
+                  <img src="images/star-empty.svg" alt="star-empty" />
+                </div>
+                <h3 class="product-title">Sports Back Cap</h3>
+                <p class="price"><span class="price-amount">49.00</span> TK</p>
+              </div>
+            </div>
+            <!-- products-card -->
+            <div class="products-card" onclick="addToCart(this)">
+              <div class="product-img">
+                <img src="images/prod5.png" alt="product image" />
+              </div>
+              <div class="product-info">
+                <div class="rating">
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-empty.svg" alt="star-empty" />
+                </div>
+                <h3 class="product-title">Full Jersey Set</h3>
+                <p class="price"><span class="price-amount">69.00</span> TK</p>
+              </div>
+            </div>
+            <!-- products-card -->
+            <div class="products-card" onclick="addToCart(this)">
+              <div class="product-img">
+                <img src="images/prod6.png" alt="product image" />
+              </div>
+              <div class="product-info">
+                <div class="rating">
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-empty.svg" alt="star-empty" />
+                  <img src="images/star-empty.svg" alt="star-empty" />
+                </div>
+                <h3 class="product-title">Sports Shoes</h3>
+                <p class="price"><span class="price-amount">149.00</span> TK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Furniture -->
+        <div class="category">
+          <h2 class="category-title">Furniture</h2>
+          <div class="products">
+            <!-- products-card -->
+            <div class="products-card" onclick="addToCart(this)">
+              <div class="product-img">
+                <img src="images/prod7.png" alt="product image" />
+              </div>
+              <div class="product-info">
+                <div class="rating-stars">
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                </div>
+                <h3 class="product-title">Single Relax Chair</h3>
+                <p class="price"><span class="price-amount">185.00</span> TK</p>
+              </div>
+            </div>
+            <!-- products-card -->
+            <div class="products-card" onclick="addToCart(this)">
+              <div class="product-img">
+                <img src="images/prod8.png" alt="product image" />
+              </div>
+              <div class="product-info">
+                <div class="rating">
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                </div>
+                <h3 class="product-title">Choping Board Set</h3>
+                <p class="price"><span class="price-amount">25.00</span> TK</p>
+              </div>
+            </div>
+            <!-- products-card -->
+            <div class="products-card" onclick="addToCart(this)">
+              <div class="product-img">
+                <img src="images/prod9.png" alt="product image" />
+              </div>
+              <div class="product-info">
+                <div class="rating">
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                  <img src="images/star-filled.svg" alt="star-filled" />
+                </div>
+                <h3 class="product-title">Home Cooker</h3>
+                <p class="price"><span class="price-amount">49.00</span> TK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============= cart and coupon section ============= -->
+      <aside class="cart-section">
+        <!-- coupon -->
+        <div class="coupon">
+          <h4>Have coupon?</h4>
+          <div class="input-group">
+            <input type="text" id="coupon-field" placeholder="Coupon code" />
+            <button id="coupon-btn" disabled type="submit">Apply</button>
+          </div>
+        </div>
+        <!-- cart -->
+        <div class="cart">
+          <ol id="cart-product-names"></ol>
+          <div class="horizontal-border hb-1"></div>
+          <p class="cart-text-dark">
+            Total price:
+            <span class="cart-text-light"
+              ><span id="total-amount">0.00</span>TK</span
+            >
+          </p>
+          <p class="cart-text-dark">
+            Discount:
+            <span class="cart-text-light"
+              ><span id="discount-amount">0.00</span>TK</span
+            >
+          </p>
+          <p class="cart-text-dark">
+            Total:
+            <span class="cart-text-light"
+              ><span id="total-final">0.00</span>TK</span
+            >
+          </p>
+          <div class="horizontal-border hb-2"></div>
+          <div class="button-area">
+            <button id="purchase-btn" disabled>Make Purchase</button>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <!-- footer -->
+    <footer>
+      <p class="copyright">
+        Copyright &copy; 2023 All right reserved by Rezaul Karim (Programming
+        Hero Batch-8).
+      </p>
+    </footer>
+    <!-- popup -->
+    <div class="popup-overlay" id="overlay"></div>
+    <div class="purchase-popup" id="popup" >
+      <img src="images/congo.png" alt="congratulation image">
+      <h3>Congratulations</h3>
+      <p>You Purchased the Products Successfully</p>
+      <button class="popup-btn" id="reset-btn">Go Home</button>
+    </div>
+    <!-- javaScript files -->
+    <script src="script.js"></script>
+  </body>
+</html>
